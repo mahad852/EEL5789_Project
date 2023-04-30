@@ -41,9 +41,9 @@ def plot_results(results, switch_name):
 
     plt.plot([i + 1 for i in range(len(correct))], correct, label='Correct predictions')
     plt.plot([i + 1 for i in range(len(incorrect))], incorrect, label='Incorrect predictions')
-    # plt.xlabel('Longitude')
+    plt.xlabel('epochs')
     plt.ylabel('Number of predictions')
-    plt.title('Number of predictions v/s epochs - Switch s1')
+    plt.title('Number of predictions v/s epochs - Switch ' + switch_name)
     plt.legend()
     plt.savefig(switch_name + '_epochs.png')
 
@@ -84,8 +84,8 @@ def main():
     print()
 
     plot_results(results1, 's1')
-    plot_results(results1, 's2')
-    plot_results(results1, 's3')
+    plot_results(results2, 's2')
+    plot_results(results3, 's3')
 
 if __name__ == '__main__':
     main()
