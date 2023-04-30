@@ -33,7 +33,7 @@ After finishing training, the main.py split uses test_performance.py to simulate
 
 As can be seen, for switch S1 the FL model slightly outperforms the normal approach. For S3, their peformances are about equal. However, for switch s2 the standard model totally outperforms FL with a major difference in hit/miss ratio. These results require reasoning and further investigation.
 
-## Mininet setup:
+## Mininet setup (implementation currently incomplete):
 Currently, the setup is incomplete and not fully implemented. We decided to use POX as our choice for remote controller due to it's simplicity and available online documentation, as well as avaialbility of official examples provided by POX. POX can be installed by cloning the official POX git repository using:
 ```
 git clone http://github.com/noxrepo/pox
